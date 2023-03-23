@@ -1,0 +1,209 @@
+<!doctype html>
+<html> 
+ <head> 
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+ <style type="text/css" id="dcoder_stylesheet">.header{
+  background-color : white;
+  border: none;
+}
+
+
+
+div{
+  border: 1px solid;
+  background-color: lightgray;
+  padding : 5px;
+}
+.hitung {
+background-color: skyblue;
+border-radius: 7px;
+color: white;
+padding: 5px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+}
+
+.hapus{
+border-radius: 7px;
+color: black;
+padding: 5px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+}
+
+.btn3{
+background-color: skyblue;
+border-radius: 7px;
+color: white;
+padding: 5px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+}
+
+.btn4{
+background-color: skyblue;
+border-radius: 7px;
+color: white;
+padding: 5px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 16px; 
+}
+  
+.btn5 {
+background-color: skyblue;
+border-radius: 7px;
+color: white;
+padding: 5px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+}
+
+.main{
+  text-align : Center;
+  font-family : arial;
+  padding: 5px;
+}
+
+.container{
+  font-family: arial;
+  text-align : center;
+  list-style-type: none;
+}
+
+.btn5{
+background-color: skyblue;
+border-radius: 7px;
+color: white;
+padding: 5px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+}
+.btn6{
+background-color: skyblue;
+border-radius: 7px;
+color: white;
+padding: 5px 15px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+
+}
+
+.Footer{
+  width:100px;
+  heigth:100px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  font-family:arial;
+  color: black;
+}
+
+.penutup{
+  width:100px;
+  heigth:100px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  font-family:arial;
+  color: black;
+}</style></head> 
+ <body> 
+  <div class="header"> 
+   <h1> Kalkulator BMI </h1> 
+   <p> Berat Badan ideal adalah impian semua orang. tidak hanya memiliki bentuk tubuh menunjang penampilan, berat badan ideal menandakan kondisi tubuh yang sehat. bagaimana dengan mu? yuk kita hitung sekarang di kalkulator BMI </p> 
+  </div> 
+  <br> 
+  <div> <from> 
+    <h1> Jenis Kelamin </h1> 
+    <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki 
+    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan 
+    <h2> Berat Badan (kg)</h2> 
+    <label><i class="fa fa-pencil"></i></label> 
+    <input type="text" id="berat"> 
+    <h2>Usia (tahun) </h2> 
+    <label><i class="fa fa-pencil"></i></label> 
+    <input type="number" id="Usia"> 
+    <h2>Tinggi Badan (cm)</h2> 
+    <label><i class="fa fa-pencil"></i></label> 
+    <input type="text" id="tinggi"> 
+    <br> 
+    <br> 
+    <button class="hitung" value="hitung" onclick="hitungBMI()">Hitung</button> 
+    <button class="hapus" onclick="hapus ()">Reset</button> 
+   </from> 
+   <br> 
+  </div> 
+  <br> 
+  <br> 
+  <div clas="main"> 
+   <center> 
+    <p id="result" class="result"></p> <button class="btn3">Download Hasil BMI</button> 
+   </center> 
+  </div> 
+  <br> 
+  <p> Hasil BMI diantaran 23 dan 25 </p> 
+  <p> anda berada dalam kategori overweight atau berat badan berlebih. cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikomsumsi dan berolahraga. jika BMI anda berada dalam kategori ini maka anda dianjurkan untuk menurunkan berat badan hingga batas normal. </p> <button class="btn4">Konsultasi Ahli Gizi Via Aplikasi </button> <button class="btn5">Registrasi Online Ahli Gizi </button> 
+  <p> BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran anda terkait dengan berat badan anda. </p> 
+  <div class="container"> 
+   <h2> Beberapa Penyakit Yang Berasal Dari Kegemukan </h2> 
+   <ul style="list-style: none;"> 
+    <li>Diabetes</li> 
+    <li>Hipertensi </li> 
+    <li>Sakit Jantung</li> 
+    <li>Osteoarthritis </li> 
+   </ul> <button class="btn5" onclick="Konsultasi Dokter Via Aplikasi">Konsultasi Dokter Via Aplikasi </button> <button class="btn6" onclick="Registrasi Online Sekarang">Registrasi Online Sekarang</button> 
+  </div> 
+  <br> 
+  <br> 
+  <br> 
+  <center>
+   <h2>Download Aplikasi</h2>
+  </center> 
+  <div class="Footer">
+   <center>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewbox="0 0 16 16">
+  <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+</svg>
+     <i class="bi bi-google-play">Goggle play</i>
+ </center>
+</div>
+<div class="penutup">
+<center>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewbox="0 0 16 16">
+  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+  <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+</svg>
+   <i class="bi bi-apple">App Store</i>
+</center></div>
+
+
+  <script type="text/javascript" src="programBMI.js"></script> 
+ 
+<script type="text/javascript" id="dcoder_script">function hitungBMI() {
+      var berat = parseFloat(document.getElementById("berat").value);
+      var tinggi = parseFloat(document.getElementById("tinggi").value) / 100;
+      var bmi = berat / (tinggi * tinggi);
+      var status = "";
+      if (bmi < 18.5) {
+        status = "Underweight";
+      } else if (bmi < 25) {
+        status = "Normal";
+      } else if (bmi < 30) {
+        status = "Overweight";
+      } else {
+      status = "Obese";
+      }
+      document.getElementById("result").innerHTML = "Berat Badan Lebih " + bmi.toFixed(1) + " (" + status + ").";
+      if (status != "Normal") {
+        
+     document.getElementById("result").innerHTML += "<br><br>Anda perlu menurunkan berat badan sebesar " + ((bmi - 24.9) * tinggi * tinggi).toFixed(1) + " kg untuk mencapai berat badan ideal.";
+     }
+    }</script></body></html>
